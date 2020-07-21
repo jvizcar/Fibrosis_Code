@@ -13,7 +13,7 @@ HistomicsUI annotations
 ## Requirements
 The code was developed and tested using Ubuntu 18.04 LTS and Python version 3.7. 
 
-For DL aspect of project we used Tensorflow 2.0 and Keras, which uses a GPU to speed up the process. The GPU used during
+For DL aspect of project we used Tensorflow 2.1 and Keras 2.3.1, which uses a GPU to speed up the process. The GPU used during
  this project is an NVIDIA GeForce GTX 1060.
 
 Other key Python packages uses: pyvips, histomicstk, girder_client, opencv, scikit-learn, Pillow.
@@ -24,10 +24,11 @@ environment run the following commands in the terminal.
 
 ```angular2html
 $ conda env create -f fibrosis_quant_env.yml
-$ conda activate fibrosis_quant_env
-$ pip install girder_client
-$ pip install histomicstk
+$ conda activate fibrosis
+$ pip install histomicstk --find-links https://girder.github.io/large_image_wheels
 ```
+Note that creating environment from yml file will complain / error when trying to install histomicstk. This is okay to 
+ignore.
 
 ## Positive Pixel Count (PPC)
 
