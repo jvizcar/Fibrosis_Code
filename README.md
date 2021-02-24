@@ -1,6 +1,8 @@
 # Fibrosis Quantification
 Updated on 2020-06-24
 
+Author: Juan Carlos (JC) Vizcarra
+
 Code description:
 * positive pixel count on WSIs with DSA instance compatability (i.e. pushing PPC results as metadata, 
 getting region of interest (ROI) from HistomicsUI annotations, etc.).
